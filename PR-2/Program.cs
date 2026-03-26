@@ -8,13 +8,13 @@ class Customer_Account
     protected long Customer_AccountNo;
     protected string Customer_name;
 
-    public Customer_Account(long acNo, string cName)
+    public Customer_Account(long acNo, string cName)  // constructor for initialising the variables 
     {
         Customer_name = cName;
         Customer_AccountNo = acNo;
     }
 
-    public void printInfo()
+    public void printInfo() // method for printing the data of the Account
     {
         Console.WriteLine("\t\t--- Account Info ---\n");
         Console.WriteLine($"\tBank Name :            {Bank_name}");
@@ -26,7 +26,7 @@ class Customer_Account
 
 class Program
 {
-    static void Main(string[] args)
+    static void Main(string[] args) // main method to run the program
     {
         Console.WriteLine("\t\t---------- Bank Details ----------\n");
 
